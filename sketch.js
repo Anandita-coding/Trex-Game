@@ -174,7 +174,7 @@ cloudsGroup.destroyEach();
 
 
 function spawnObstacles(){
- if (frameCount % 60 === 0){
+ if (frameCount % 120 === 0){
    var obstacle = createSprite(600,165,10,40);
    obstacle.x = camera.position.x
    
@@ -207,7 +207,7 @@ function spawnObstacles(){
 
 function spawnClouds() {
   //write code here to spawn the clouds
-  if (frameCount % 60 === 0) {
+  if (frameCount % 50 === 0) {
     var cloud = createSprite(600,120,40,10);
     cloud.y = Math.round(random(80,120));
     cloud.addImage(cloudImage);
