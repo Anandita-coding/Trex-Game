@@ -81,7 +81,7 @@ function draw() {
   
   background(255);
   //displaying score
-  text("Score: "+ score, 500,50);
+  text("Score: "+ score, camera.position.x,50);
   
   
   if(gameState === PLAY){
